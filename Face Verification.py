@@ -51,7 +51,7 @@ def get_embeddings(filenames):
 
 # In[9]:
 
-
+# is_match function can be used to compare distance between embeddings of faces
 def is_match(known_embedding, candidate_embedding, thresh=0.6): 
     score = cosine(known_embedding, candidate_embedding) 
     if score <= thresh: 
@@ -76,7 +76,7 @@ steve = embeddings[1]
 # In[10]:
 
 
-# is_match function can be used to compare distance between embeddings of faces
+
 is_match(embeddings[1], embeddings[2])
 is_match(embeddings[1], embeddings[0])
 
