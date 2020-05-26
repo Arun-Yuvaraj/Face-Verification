@@ -1,3 +1,4 @@
 # Face-Verification
 
-For Face Verification to be done, we pass our Face image through VGGFace model and get the embeddings at the last layer which can be compared with different faces.
+For Face Verification to be done -
+We first use MTCNN to detect faces from given image and then pass it to FaceNet algorithm which converts these faces to 128 dimension vector which then can be used with SVM to make a recognition
